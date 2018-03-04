@@ -2,4 +2,3 @@
 
 #### extension sending a magento newsletter for testing
 
-- auto sync with Packagist
