@@ -1,0 +1,8 @@
+<config>
+   <modules>
+      <DC_Newsletter>
+         <active>true</active>
+         <codePool>community</codePool>
+      </DC_Newsletter>
+   </modules>
+</config>

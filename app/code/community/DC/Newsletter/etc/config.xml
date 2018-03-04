@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Dot Collective - Magento Output 2009
+ * Find more about the Newsletter module:
+ * http://dot.collective.ro/magento-output/
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   DC
+ * @package    DC_Newsletter
+ * @copyright  Copyright (c) 2009 Dot Collective SRL http://dot.collective.ro
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <DC_Newsletter>
+            <version>0.1.0</version>
+        </DC_Newsletter>
+    </modules>
+
+	<admin>
+		<routers>
+    	   <adminhtml>
+                <use>admin</use>
+                <args>
+                    <modules>
+		         		<DC_Newsletter_Admin before="Mage_Adminhtml">DC_Newsletter_Admin</DC_Newsletter_Admin>
+		       		</modules>
+                </args>
+		   </adminhtml>
+	     </routers>
+	</admin>
+	
+	
+    <global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <newsletter_template_grid_renderer_action>DC_Newsletter_Adminhtml_Block_Template_Grid_Renderer_Action</newsletter_template_grid_renderer_action>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        
+        <helpers>
+            <dc_newsletter>
+                <class>
+                    DC_Newsletter_Helper
+                </class>
+            </dc_newsletter>
+        </helpers>
+    </global>
+
+</config>

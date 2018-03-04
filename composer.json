@@ -1,0 +1,21 @@
+{
+	"name": "hgati/dc-newsletter",
+	"type": "magento-module",
+	"license":"OSL-3.0",
+	"description": "fork for composer",
+	"authors":[
+		{
+			"name":"hgati",
+			"email":"cobays@gmail.com"
+		}
+	],
+	"require": {
+		"magento-hackathon/magento-composer-installer":"*"
+	},
+	"extra": {
+		"map": [
+			["app/code/community/DC/Newsletter", "app/code/community/DC/Newsletter"],
+			["app/etc/modules/DC_Newsletter.xml", "app/etc/modules/DC_Newsletter.xml"]
+        ]
+    }	
+}
